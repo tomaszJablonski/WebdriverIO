@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat Jul 06 11:27:00 CEST 2024","Sat Jul 06 11:27:06 CEST 2024","6217","","First Test","","","","Test1 in Mocha",""
+"broken","Sat Jul 06 09:20:51 CEST 2024","Sat Jul 06 09:20:58 CEST 2024","7608","","Fisrt Test","","","","Test1 in JavaScript",""
+"broken","Sat Jul 06 09:20:51 CEST 2024","Sat Jul 06 09:20:58 CEST 2024","7676","","Fisrt Test","","","","Test1 in Mocha",""
+"skipped","Sat Jul 06 11:26:59 CEST 2024","Sat Jul 06 11:26:59 CEST 2024","1","","My Login application","","","","should login with valid credentials",""
+"passed","Sat Jul 06 08:52:59 CEST 2024","Sat Jul 06 08:53:02 CEST 2024","2394","","My Login application","","","","should login with valid credentials",""
