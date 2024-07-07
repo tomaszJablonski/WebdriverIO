@@ -2,7 +2,7 @@ const LoginPage = require('../pages/login.page')
 
 describe('Login Test', function (){
 
-    it.skip('Login1', async () => {
+    it('Login1', async () => {
 
         browser.url('https://the-internet.herokuapp.com/login')
         await $('#username').setValue('tomsmith');
@@ -23,7 +23,9 @@ describe('Login Test', function (){
         browser.url('https://the-internet.herokuapp.com/login')
 
         await LoginPage.login('tomsmith','SuperSecretPassword!')
+        browser.pause(2000);
         await LoginPage.checkLoginAs('Welcome to the Secure Area. When you are done click logout below.')
+        browser.pause(2000);
         await LoginPage.isYouLoggedAs('You logged into a secure area!')
 
     })
