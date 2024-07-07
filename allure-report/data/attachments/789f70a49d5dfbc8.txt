@@ -1,4 +1,0 @@
-{
-  "using": "css selector",
-  "value": "#postid-3138 > h2 > a"
-}

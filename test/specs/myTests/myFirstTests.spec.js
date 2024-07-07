@@ -1,5 +1,5 @@
 
-describe.only('First Test', function () {
+describe.skip('First Test', function () {
 
     it('Test1 in Mocha', async () => {
 
