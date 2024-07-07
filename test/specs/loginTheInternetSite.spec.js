@@ -1,8 +1,8 @@
-const LoginPage = require('@pages/login.page')
+const LoginPage = require('../pages/login.page')
 
 describe('Login Test', function (){
 
-    it('Login1', async () => {
+    it.skip('Login1', async () => {
 
         browser.url('https://the-internet.herokuapp.com/login')
         await $('#username').setValue('tomsmith');

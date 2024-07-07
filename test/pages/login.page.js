@@ -1,4 +1,4 @@
-export class LoginPage {
+class LoginPage {
 
     //locators
 
@@ -31,17 +31,15 @@ export class LoginPage {
     }
 
     async checkLoginAs(message) {
-        await this.checkLogin()
-            .isEqual(message)
+        await this.checkLogin.waitForDisplayed();
+        await expect(this.checkLogin).toEqual(message); 
     }
 
     async isYouLoggedAs(message) {
         await this.isYouLogged.waitForDisplayed();
-        await expect(isYouLogged)
+        await expect(this.isYouLogged)
             .toHaveText(expect.stringContaining(message));
     }
-
-
 
 }
 module.exports = new LoginPage();

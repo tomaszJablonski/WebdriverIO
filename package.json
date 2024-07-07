@@ -6,7 +6,7 @@
     "wdio": "wdio run ./wdio.conf.js"
   },
   "_moduleAliases": {
-    "@pages": "pages"
+    "@pages": "test\\pages"
   },
   "keywords": [],
   "author": "",
