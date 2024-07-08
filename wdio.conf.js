@@ -132,10 +132,10 @@ exports.config = {
         ['junit', {
             outputDir: 'junit-reporters',
             outputFileFormat: function (options) { // optional
-                return `results-${new Date().getTime()}.xml`
+                return `results-${options.cid}.xml` // ten wypluje jeden pełny raport
+                // return `results-${new Date().getTime()}.xml` //wypluje raport ale będzie się generował co sekunde
             }
-        },
-        ]
+        }]
     ],
 
     // Options to be passed to Mocha.
