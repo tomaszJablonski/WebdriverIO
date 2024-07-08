@@ -1,4 +1,6 @@
+#node files
 node_modules
+#reports files
 allure-results
 .tmp
 allure-report
