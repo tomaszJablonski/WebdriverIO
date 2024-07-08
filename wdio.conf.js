@@ -133,7 +133,7 @@ exports.config = {
     ],
     reporterOptions: {
         junit: {
-            outputDir: './'
+            outputDir: 'junit-reports'
         }
     },
 
