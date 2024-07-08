@@ -128,8 +128,14 @@ exports.config = {
         ['allure', {
             outputDir: 'allure-results'
         }
-        ]
+        ],
+        'junit'
     ],
+    reporterOptions: {
+        junit: {
+            outputDir: './'
+        }
+    },
 
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
