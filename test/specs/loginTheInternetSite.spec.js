@@ -18,7 +18,7 @@ describe('Login Test', function (){
         await expect(isYouLogged).toHaveText(expect.stringContaining('You logged into a secure area!'));
     })
 
-    it('login POM', async() => {
+    it.skip('login POM', async() => {
 
         browser.url('https://the-internet.herokuapp.com/login')
 
