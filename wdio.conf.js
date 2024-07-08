@@ -129,13 +129,14 @@ exports.config = {
             outputDir: 'allure-results'
         }
         ],
-        'junit'
+        ['junit', {
+            outputDir: 'junit-reporters',
+            outputFileFormat: function (options) { // optional
+                return `results-${new Date().getTime()}.xml`
+            }
+        },
+        ]
     ],
-    reporterOptions: {
-        junit: {
-            outputDir: 'junit-reports'
-        }
-    },
 
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
